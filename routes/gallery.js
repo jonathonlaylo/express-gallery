@@ -33,6 +33,14 @@ router.route('/new')
       });
   });
 
+router.route('/:id/edit')
+  .get((req, res) => {
+    models.Gallery.findById(req.params.id)
+    .then((gallery) => {
+      res.json(gallery);
+    });
+  });
+
 router.route('/:id')
   .get((req, res) =>{
     models.Gallery.findById(req.params.id)
