@@ -47,7 +47,13 @@ router.route('/:id')
     });
   })
   .delete((req, res) => {
-
+    models.Gallery.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then((task) =>{
+      res.json(task);
+    });
   });
 
 module.exports = router;
