@@ -11,7 +11,7 @@ router.route('/')
     models.Gallery.findAll()
       .then((gallery) => {
         // res.json('sanity check');
-        res.json(gallery);
+        res.render('gallery/index', {'gallery': gallery});
       });
   })
   .post((req, res) => {

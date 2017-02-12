@@ -2,6 +2,16 @@
 const express = require('express');
 const bp = require('body-parser');
 const app = express();
+const handlebars = require('express-handlebars');
+
+const hbs = handlebars.create({
+  extname: '.hbs',
+  defaultlayout: 'app'
+});
+
+app.engine('hbs', hbs.engine);
+
+app.set('view engine', 'hbs');
 
 app.use(bp.urlencoded({extended: true}));
 
