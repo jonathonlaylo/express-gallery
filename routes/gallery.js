@@ -25,6 +25,14 @@ router.route('/')
     });
   });
 
+router.route('/new')
+  .get((req, res) =>{
+    models.Gallery.findAll()
+      .then((gallery) => {
+        res.send('sanity check');
+      });
+  });
+
 router.route('/:id')
   .get((req, res) =>{
     models.Gallery.findById(req.params.id)
