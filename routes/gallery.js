@@ -14,7 +14,6 @@ router.route('/')
         res.json(gallery);
       });
   })
-
   .post((req, res) => {
     models.Gallery.create({
       author: req.body.author,
@@ -32,6 +31,23 @@ router.route('/:id')
     .then((gallery) =>{
       res.json(gallery);
     });
+  })
+  .put((req, res) => {
+    models.Gallery.findById(req.params.id)
+    .then((task) => {
+      if(task){
+        task.updateAttributes({
+          author: req.body.author,
+          link: req.body.link,
+          description: req.body.description
+        }).then((task) =>{
+          res.json(task);
+        });
+      }
+    });
+  })
+  .delete((req, res) => {
+
   });
 
 module.exports = router;
