@@ -10,9 +10,20 @@ router.route('/')
   .get((req, res) => {
     models.Gallery.findAll()
       .then((gallery) => {
-        // res.send('sanity check');
+        // res.json('sanity check');
         res.json(gallery);
       });
+  })
+
+  .post((req, res) => {
+    models.Gallery.create({
+      author: req.body.author,
+      link: req.body.link,
+      description: req.body.description
+      })
+    .then((task) =>{
+      res.json(task);
+    });
   });
 
 module.exports = router;
