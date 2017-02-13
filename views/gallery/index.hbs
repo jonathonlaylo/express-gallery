@@ -3,11 +3,12 @@
 {{#each gallery}}
   <div class="galleryIndex">
     <p>
-    Author: {{author}}
-      <br>
-    Link: {{link}}
-      <br>
-    Description: {{description}}
+      <h1>Author: {{author}}</h1>
+        <a href="/gallery/{{id}}">
+        <img src="{{link}}">
+        </a>
+    <p>
+      Description: {{description}}
     </p>
   </div>
 {{/each}}
