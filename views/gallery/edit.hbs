@@ -1,0 +1,17 @@
+<h1>Edit a Photo</h1>
+{{if galleryEdit}}
+<img src="{{link}}">
+
+<form action="/gallery/{{id}}/?_method=put" method="post" id="editPhoto" name="editPhoto">
+  <label name="author">Author</label>
+  <input type="text" name="author" value="{{author}}">
+
+  <label name="link">Link</label>
+  <input type="text" name="link" value="{{link}}">
+
+  <label name="description">Description</label>
+  <input type="text" name="description" value="{{description}}">
+  </form>}
+{{/if}}
+
+}
