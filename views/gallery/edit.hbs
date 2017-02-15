@@ -1,5 +1,6 @@
 <h1>Edit a Photo</h1>
-{{if galleryEdit}}
+
+{{#if galleryEdit}}
 <img src="{{link}}">
 
 <form action="/gallery/{{id}}/?_method=put" method="post" id="editPhoto" name="editPhoto">

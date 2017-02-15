@@ -1,15 +1,18 @@
 <h1>Gallery Index</h1>
 
+<form action="/gallery/new" method="get">
+   <button type="submit">Add a Photo</button>
+</form
+
 {{#each gallery}}
   <div class="galleryIndex">
+      <a href="/gallery/{{id}}">
+      <img src="{{link}}">
+      </a>
     <p>
       <h1>Author: {{author}}</h1>
-        <a href="/gallery/{{id}}">
-        <img src="{{link}}">
-        </a>
-    </p>
-    <p>
       Description: {{description}}
     </p>
+    <br>
   </div>
 {{/each}}
