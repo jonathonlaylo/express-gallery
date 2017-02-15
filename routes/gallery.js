@@ -37,7 +37,7 @@ router.route('/:id/edit')
   .get((req, res) => {
     models.Gallery.findById(req.params.id)
     .then((gallery) => {
-      res.render('gallery/edit', {'galleryEdit': gallery});
+      res.render('gallery/edit', gallery);
     });
   });
 
@@ -45,7 +45,7 @@ router.route('/:id')
   .get((req, res) =>{
     models.Gallery.findById(req.params.id)
     .then((gallery) =>{
-      res.json(gallery);
+      res.render('gallery/photo', {'galleryPhoto': gallery});
     });
   })
   .put((req, res) => {

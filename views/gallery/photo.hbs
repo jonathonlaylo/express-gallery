@@ -1,0 +1,15 @@
+<h1>Photo</h1>
+
+{{#if galleryPhoto}}
+<div class="galleryPhoto">
+  <p>
+    <h1>Author: {{galleryPhoto.author}}</h1>
+      <a href="/gallery/{{galleryPhoto.id}}">
+      <img src="{{galleryPhoto.link}}">
+      </a>
+  </p>
+  <p>
+    Description: {{galleryPhoto.description}}
+  </p>
+</div>
+{{/if}}
