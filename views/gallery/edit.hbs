@@ -1,18 +1,21 @@
 <h1>Edit a Photo</h1>
 
 {{#if galleryEdit}}
-<img src="{{link}}">
+<img src="{{galleryEdit.link}}">
 
-<form action="/gallery/{{id}}/?_method=put" method="post" id="editPhoto" name="editPhoto">
+<form action="/gallery/{{galleryEdit.id}}/?_method=put" method="post" id="editPhoto" name="editPhoto">
   <label name="author">Author</label>
-  <input type="text" name="author" value="{{author}}">
-
+  <input type="text" name="author" value="{{galleryEdit.author}}">
+  <br>
   <label name="link">Link</label>
-  <input type="text" name="link" value="{{link}}">
-
+  <input type="text" name="link" value="{{galleryEdit.link}}">
+  <br>
   <label name="description">Description</label>
-  <input type="text" name="description" value="{{description}}">
-  </form>}
+  <input type="text" name="description" value="{{galleryEdit.description}}">
+  </form>
+
+  {{!-- <form action="/gallery/" method="get"> --}}
+    <button type="submit">Submit</button>
+  </form>
 {{/if}}
 
-}
