@@ -21,6 +21,7 @@ router.route('/')
       description: req.body.description
       })
     .then((task) =>{
+      console.log('sdkjasdkjad');
       res.json(task);
     });
   });
@@ -49,14 +50,17 @@ router.route('/:id')
     });
   })
   .put((req, res) => {
+    console.log(req.body);
     models.Gallery.findById(req.params.id)
     .then((task) => {
       if(task){
-        task.updateAttributes({
+        console.log('task', task);
+        task.update({
           author: req.body.author,
           link: req.body.link,
           description: req.body.description
         }).then((task) =>{
+
           res.json(task);
         });
       }

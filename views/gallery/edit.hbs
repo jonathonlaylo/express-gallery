@@ -3,19 +3,20 @@
 {{#if galleryEdit}}
 <img src="{{galleryEdit.link}}">
 
-<form action="/gallery/{{galleryEdit.id}}/?_method=put" method="post" id="editPhoto" name="editPhoto">
+<form action="/gallery/{{galleryEdit.id}}?_method=PUT" method="post" id="editPhoto" name="editPhoto">
   <label name="author">Author</label>
   <input type="text" name="author" value="{{galleryEdit.author}}">
+  <button type="submit">button</button>
   <br>
   <label name="link">Link</label>
   <input type="text" name="link" value="{{galleryEdit.link}}">
+  <button type="submit">button</button>
   <br>
   <label name="description">Description</label>
   <input type="text" name="description" value="{{galleryEdit.description}}">
+  <button type="submit">button</button>
+
   </form>
 
-  {{!-- <form action="/gallery/" method="get"> --}}
-    <button type="submit">Submit</button>
-  </form>
 {{/if}}
 

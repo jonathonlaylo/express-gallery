@@ -3,6 +3,7 @@ const express = require('express');
 const bp = require('body-parser');
 const app = express();
 const handlebars = require('express-handlebars');
+const methodOverride = require('method-override');
 
 const hbs = handlebars.create({
   extname: '.hbs',
@@ -14,6 +15,8 @@ app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 
 app.use(bp.urlencoded({extended: true}));
+
+app.use(methodOverride('_method'));
 
 const db = require('./models');
 const gallery = require('./routes/gallery.js');
