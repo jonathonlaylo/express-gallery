@@ -13,8 +13,11 @@
   </p>
 </div>
 
-{{!-- Work on this edit Button... --}}
 <form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
    <button type="submit">Edit a Photo</button>
-</form
+</form>
+
+<form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="POST">
+  <button type="submit">Delete this Photo</button>
+</form>
 {{/if}}

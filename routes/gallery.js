@@ -21,8 +21,7 @@ router.route('/')
       description: req.body.description
       })
     .then((task) =>{
-      console.log('sdkjasdkjad');
-      res.json(task);
+      res.redirect(303, '/gallery');
     });
   });
 
@@ -60,8 +59,7 @@ router.route('/:id')
           link: req.body.link,
           description: req.body.description
         }).then((task) =>{
-
-          res.json(task);
+          res.redirect(303, '/gallery');
         });
       }
     });
@@ -72,7 +70,7 @@ router.route('/:id')
         id: req.params.id
       }
     }).then((task) =>{
-      res.json(task);
+      res.redirect(303, '/gallery');
     });
   });
 
