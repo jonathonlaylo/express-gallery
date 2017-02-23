@@ -1,21 +1,14 @@
-{{!-- <head>
-<h1>_ARCHITEKT</h1>
-  <aside>
-    Welcome to your online portfolio, we are small group of passionate designers and archiects, looking to cahnge and create amazing digital images to inspire others to follow in our innovative steps. Free Architect Wordpress Theme
-  </aside>
-</head> --}}
-
-<form action="/gallery/new" method="get">
+{{!-- <form action="/gallery/new" method="get">
    <button type="submit">Add a Photo</button>
 </form
-
+ --}}
 {{#each gallery}}
   <div class="galleryIndex">
       <a href="/gallery/{{id}}">
       <img src="{{link}}">
       </a>
     <p>
-      <h1>Author: {{author}}</h1>
+      Author: {{author}}
       Description: {{description}}
     </p>
     <br>

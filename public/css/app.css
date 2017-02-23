@@ -64,4 +64,44 @@ body {
   font-family: 'Arial', sans-serif; }
 
 h1 {
-  font-size: 100px; }
+  font-size: 50px;
+  float: left;
+  width: 63%; }
+
+aside {
+  float: right;
+  width: 30%;
+  border-left: 1px solid black;
+  padding-left: 25px;
+  font-size: 10px; }
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 600px;
+  max-height: 600px; }
+
+.container {
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.title-container {
+  border-top: 1px solid black;
+  padding: 10px; }
+
+button {
+  background: black;
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 15px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  border: 0; }
+
+button:hover {
+  background: gray;
+  color: white;
+  border-color: black;
+  border: 1px; }

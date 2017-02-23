@@ -1,23 +1,21 @@
-<h1>Photo</h1>
-
 {{#if galleryPhoto}}
 <div class="galleryPhoto">
   <p>
-    <h1>Author: {{galleryPhoto.author}}</h1>
-      <a href="/gallery/{{galleryPhoto.id}}">
-      <img src="{{galleryPhoto.link}}">
-      </a>
+    <a href="/gallery/{{galleryPhoto.id}}">
+    <img src="{{galleryPhoto.link}}">
+    </a>
   </p>
   <p>
+    Author: {{galleryPhoto.author}}
     Description: {{galleryPhoto.description}}
   </p>
 </div>
 
 <form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
-   <button type="submit">Edit a Photo</button>
+   <button type="submit">Edit Photo</button>
 </form>
 
 <form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="POST">
-  <button type="submit">Delete this Photo</button>
+  <button type="submit">Delete Photo</button>
 </form>
 {{/if}}
