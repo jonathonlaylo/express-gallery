@@ -26,21 +26,9 @@ img {
   max-height: 600px;
 }
 
-.container{
-  // border-style: solid;
-  // border-color: green;
-  // border-width: 1px;
-  padding-top: 45px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.title-container{
-  // border-style: solid;
-  // border-color: pink;
-  // border-width: 1px;
-  border-top: 1px solid black;
-  padding: 10px;
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none !important;
 }
 
 button {
@@ -62,4 +50,33 @@ button:hover {
   color: white;
   border-color: black;
   border: 1px;
+}
+
+.container {
+  // border-style: solid;
+  // border-color: green;
+  // border-width: 1px;
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title-container {
+  // border-style: solid;
+  // border-color: pink;
+  // border-width: 1px;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+
+.galleryIndex {
+
+}
+
+.galleryPhoto {
+
+}
+
+.galleryEdit {
+
 }
