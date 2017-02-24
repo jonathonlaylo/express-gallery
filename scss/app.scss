@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-size: 50px;
-  float: left;
+  // float: left;
   width: 63%;
 }
 
@@ -20,15 +20,16 @@ aside {
 }
 
 img {
-  height: auto;
-  width: auto;
-  max-width: 600px;
-  max-height: 600px;
+height: 100%;
+width: 100%;
+// max-width: 600px;
+// max-height: 600px;
 }
 
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none !important;
+
 }
 
 button {
@@ -52,25 +53,48 @@ button:hover {
   border: 1px;
 }
 
-.container {
-  // border-style: solid;
-  // border-color: green;
-  // border-width: 1px;
-  padding-top: 45px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .title-container {
   // border-style: solid;
   // border-color: pink;
   // border-width: 1px;
+
   border-top: 1px solid black;
+  padding-top: 10px;
+  margin: 30px 10px 30px 10px;
+}
+
+.container {
+  // border-style: solid;
+  // border-color: green;
+  // border-width: 1px;
+
+  // padding-top: 45px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.galleryContainer{
+  // flex: 1 1 33%;
+  height: 30%;
+  width: 30%;
   padding: 10px;
 }
 
-.galleryIndex {
+// .galleryContainer:nth-child {
+//   display: inline-block;
+//   width: 100px;
+// }
 
+.galleryContainer:first-child {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5px;
 }
 
 .galleryPhoto {
@@ -78,5 +102,12 @@ button:hover {
 }
 
 .galleryEdit {
+  width: 500px;
 
+
+}
+
+.galleryEdit textarea{
+  width: 100%;
+  height: 50px;
 }

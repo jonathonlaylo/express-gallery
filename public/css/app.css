@@ -65,7 +65,6 @@ body {
 
 h1 {
   font-size: 50px;
-  float: left;
   width: 63%; }
 
 aside {
@@ -76,10 +75,8 @@ aside {
   font-size: 10px; }
 
 img {
-  height: auto;
-  width: auto;
-  max-width: 600px;
-  max-height: 600px; }
+  height: 100%;
+  width: 100%; }
 
 a, a:visited, a:hover, a:active {
   color: inherit;
@@ -101,11 +98,32 @@ button:hover {
   border-color: black;
   border: 1px; }
 
-.container {
-  padding-top: 45px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
 .title-container {
   border-top: 1px solid black;
+  padding-top: 10px;
+  margin: 30px 10px 30px 10px; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center; }
+
+.galleryContainer {
+  height: 30%;
+  width: 30%;
   padding: 10px; }
+
+.galleryContainer:first-child {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5px; }
+
+.galleryEdit {
+  width: 500px; }
+
+.galleryEdit textarea {
+  width: 100%;
+  height: 50px; }
