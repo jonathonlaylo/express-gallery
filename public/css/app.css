@@ -65,6 +65,7 @@ body {
 
 h1 {
   font-size: 50px;
+  float: left;
   width: 63%; }
 
 aside {
@@ -108,8 +109,8 @@ button:hover {
   justify-content: space-around;
   margin: auto;
   flex-flow: row wrap;
-  width: 100%;
-  text-align: center; }
+  width: 95%;
+  text-align: left; }
 
 .galleryContainer {
   height: 30%;

@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-size: 50px;
-  // float: left;
+  float: left;
   width: 63%;
 }
 
@@ -75,11 +75,15 @@ button:hover {
   justify-content: space-around;
   margin: auto;
   flex-flow: row wrap;
-  width: 100%;
-  text-align: center;
+  width: 95%;
+  text-align: left;
+
+  @media only screen and (max-device-width: 480px) {
+
+  }
 }
 
-.galleryContainer{
+.galleryContainer {
   // flex: 1 1 33%;
   height: 30%;
   width: 30%;
