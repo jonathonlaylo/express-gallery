@@ -71,9 +71,12 @@ h1 {
 aside {
   float: right;
   width: 30%;
-  border-left: 1px solid black;
+  border-left: 1px dotted black;
   padding-left: 25px;
   font-size: 10px; }
+  @media only screen and (max-width: 500px) {
+    aside {
+      display: none; } }
 
 img {
   height: 100%;
@@ -100,7 +103,7 @@ button:hover {
   border: 1px; }
 
 .title-container {
-  border-top: 1px solid black;
+  border-top: 1px dotted black;
   padding-top: 10px;
   margin: 30px 10px 30px 10px; }
 
@@ -109,18 +112,33 @@ button:hover {
   justify-content: space-around;
   margin: auto;
   flex-flow: row wrap;
-  width: 95%;
+  width: 100%;
   text-align: left; }
 
 .galleryContainer {
   height: 30%;
   width: 30%;
   padding: 10px; }
+  @media only screen and (max-width: 500px) {
+    .galleryContainer {
+      width: 100%;
+      margin: 0px 5px 5px 5px; }
+      .galleryContainer .title-container {
+        border-top: 1px none clear; }
+      .galleryContainer img {
+        width: 100%; } }
 
 .galleryContainer:first-child {
   height: 100%;
   width: 100%;
   padding-bottom: 5px; }
+  @media only screen and (max-width: 500px) {
+    .galleryContainer:first-child {
+      margin: 5px 5px 5px 5px;
+      border-bottom: 1px dotted black; }
+      .galleryContainer:first-child img {
+        height: 100%;
+        width: 100%; } }
 
 .galleryEdit {
   width: 500px; }

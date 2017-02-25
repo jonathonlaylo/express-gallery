@@ -14,16 +14,18 @@ h1 {
 aside {
   float: right;
   width: 30%;
-  border-left: 1px solid black;
+  border-left: 1px dotted black;
   padding-left: 25px;
   font-size: 10px;
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 img {
-height: 100%;
-width: 100%;
-// max-width: 600px;
-// max-height: 600px;
+  height: 100%;
+  width: 100%;
 }
 
 a, a:visited, a:hover, a:active {
@@ -58,7 +60,7 @@ button:hover {
   // border-color: pink;
   // border-width: 1px;
 
-  border-top: 1px solid black;
+  border-top: 1px dotted black;
   padding-top: 10px;
   margin: 30px 10px 30px 10px;
 }
@@ -75,19 +77,31 @@ button:hover {
   justify-content: space-around;
   margin: auto;
   flex-flow: row wrap;
-  width: 95%;
+  width: 100%;
   text-align: left;
-
-  @media only screen and (max-device-width: 480px) {
-
-  }
 }
 
 .galleryContainer {
-  // flex: 1 1 33%;
+  // border-style: solid;
+  // border-color: green;
+  // border-width: 1px;
+
   height: 30%;
   width: 30%;
   padding: 10px;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    margin: 0px 5px 5px 5px;
+
+    .title-container{
+      border-top: 1px none clear;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 // .galleryContainer:nth-child {
@@ -96,9 +110,23 @@ button:hover {
 // }
 
 .galleryContainer:first-child {
+  // border-style: solid;
+  // border-color: black;
+  // border-width: 1px;
+
   height: 100%;
   width: 100%;
   padding-bottom: 5px;
+
+  @media only screen and (max-width: 500px) {
+    margin: 5px 5px 5px 5px;
+    border-bottom: 1px dotted black;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .galleryPhoto {
