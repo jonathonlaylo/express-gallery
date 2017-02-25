@@ -31,7 +31,6 @@ img {
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none !important;
-
 }
 
 button {
@@ -41,11 +40,8 @@ button {
   font-size: 15px;
   height: 30px;
   width: 100px;
-  // line-height: 60px;
-  // margin: 25px 25px;
   text-align: center;
   border: 0;
-  // transition: all 0.3s ease 0s;
 }
 
 button:hover {
@@ -65,11 +61,24 @@ button:hover {
   margin: 30px 10px 30px 10px;
 }
 
-.container {
-  // border-style: solid;
-  // border-color: green;
-  // border-width: 1px;
+.menu {
+  padding: 10px;
+  float: right;
 
+  @media only screen and (max-width: 500px) {
+    padding-right: 15px;
+  }
+}
+
+.addMenu {
+  float: left;
+}
+
+.userMenu {
+  float: right;
+}
+
+.container {
   // padding-top: 45px;
   // padding-left: 20px;
   // padding-right: 20px;
@@ -82,10 +91,6 @@ button:hover {
 }
 
 .galleryContainer {
-  // border-style: solid;
-  // border-color: green;
-  // border-width: 1px;
-
   height: 30%;
   width: 30%;
   padding: 10px;
@@ -97,23 +102,13 @@ button:hover {
     .title-container{
       border-top: 1px none clear;
     }
-
     img {
       width: 100%;
     }
   }
 }
 
-// .galleryContainer:nth-child {
-//   display: inline-block;
-//   width: 100px;
-// }
-
 .galleryContainer:first-child {
-  // border-style: solid;
-  // border-color: black;
-  // border-width: 1px;
-
   height: 100%;
   width: 100%;
   padding-bottom: 5px;
@@ -130,16 +125,43 @@ button:hover {
 }
 
 .galleryPhoto {
+  padding: 10px;
 
+  @media only screen and (max-width: 500px) {
+
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    .title-container{
+      border-top: 1px none clear;
+    }
+    img {
+      width: 100%;
+    }
+    button {
+      align: left;
+    }
+  }
 }
 
 .galleryEdit {
-  width: 500px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 
+  @media only screen and (max-width: 500px) {
 
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    .title-container{
+      border-top: 1px none clear;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .galleryEdit textarea{
-  width: 100%;
-  height: 50px;
+  // width: 100%;
+  // height: 50px;
 }

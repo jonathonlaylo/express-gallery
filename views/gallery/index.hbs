@@ -1,14 +1,12 @@
-{{!-- <form action="/gallery/new" method="get">
-   <button type="submit">Add a Photo</button>
-</form --}}
-
 {{#each gallery}}
   <div class="galleryContainer">
       <a name="photo" href="/gallery/{{id}}">
       <img src="{{link}}">
       </a>
     <p>
-      {{author}} - <br>{{description}}
+      {{author}}
+      <br>
+      {{description}}
     </p>
     <br>
   </div>
