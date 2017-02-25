@@ -178,3 +178,8 @@ button:hover {
         border-top: 1px none clear; }
       .galleryEdit img {
         width: 100%; } }
+
+.newPhoto {
+  width: 100%;
+  padding: 10px;
+  text-align: left; }
