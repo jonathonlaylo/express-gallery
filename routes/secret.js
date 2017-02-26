@@ -14,6 +14,7 @@ router.route('/')
 });
 
 function isAuthenticated (req, res, next) {
+  console.log('ping');
   if (req.isAuthenticated()) {
     next();
   }else {

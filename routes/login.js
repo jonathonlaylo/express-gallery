@@ -13,4 +13,9 @@ router.route('/')
   res.render('./login');
 });
 
+router.post('/', (passport.authenticate('local', {
+  successRedirect: '/gallery',
+  failureRedirect: '/login'
+})));
+
 module.exports = router;
