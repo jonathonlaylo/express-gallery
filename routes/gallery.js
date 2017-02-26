@@ -12,7 +12,6 @@ router.route('/')
 
     models.Gallery.findAll()
       .then((gallery) => {
-        // res.json('sanity check');
         let username;
         if (req.user) {
           username = req.user.username;

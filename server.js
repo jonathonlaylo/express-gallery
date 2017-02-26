@@ -8,8 +8,7 @@ const hbs = handlebars.create({
   extname: '.hbs',
   defaultLayout: 'app'
 });
-//new stuff
-// const CONFIG = require('./config/config.json');
+
 const session = require('express-session');
 const RedisStore = require('connect-redis')(session);
 

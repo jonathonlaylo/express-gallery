@@ -108,6 +108,10 @@ button:hover {
   padding-top: 10px;
   margin: 30px 10px 30px 10px; }
 
+.userInfo {
+  font-size: 20px;
+  text-align: center; }
+
 .menu {
   padding: 10px;
   float: right; }
@@ -126,8 +130,7 @@ button:hover {
   justify-content: space-between;
   margin: auto;
   flex-flow: row wrap;
-  width: 100%;
-  text-align: left; }
+  width: 100%; }
 
 .galleryContainer {
   height: 30%;
@@ -195,7 +198,3 @@ button:hover {
   width: 100%;
   padding: 10px;
   text-align: left; }
-
-.userInfo {
-  padding-top: 10px;
-  font-size: 12px; }

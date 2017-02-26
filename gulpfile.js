@@ -9,25 +9,8 @@ gulp.task('scss', () =>{
     .pipe(gulp.dest('./public/css'));
 });
 
-// gulp.task('browserSync', () => {
-//   browserSync.init(['./public'], {
-//     server: {
-//       baseDir: './public'
-//     }
-//   });
-// });
-
-// gulp.task('browserSync', () =>{
-//   browserSync.init(null, {
-//     proxy: 'localhost:8080',
-//     port: 5000
-//   });
-// });
-
-// gulp.task('watch', ['browserSync'], () => {
 gulp.task('watch', () => {
   gulp.watch('./scss/**/*.scss', ['scss']);
 });
 
-// gulp.task('default', ['scss', 'watch']);
 gulp.task('default', ['watch']);

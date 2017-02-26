@@ -58,6 +58,11 @@ button:hover {
   margin: 30px 10px 30px 10px;
 }
 
+.userInfo {
+  font-size: 20px;
+  text-align: center;
+}
+
 .menu {
   padding: 10px;
   float: right;
@@ -91,7 +96,6 @@ button:hover {
   @media only screen and (max-width: 500px) {
     width: 100%;
     margin: 0px 5px 5px 5px;
-
     .title-container{
       border-top: 1px none clear;
     }
@@ -109,7 +113,6 @@ button:hover {
   @media only screen and (max-width: 500px) {
     margin: 5px 5px 5px 5px;
     border-bottom: 1px dotted black;
-
     img {
       width: 100%;
     }
@@ -130,9 +133,6 @@ button:hover {
     img {
       width: 100%;
     }
-    button {
-
-    }
   }
 }
 
@@ -144,7 +144,6 @@ button:hover {
   @media only screen and (max-width: 500px) {
     margin: 5px 5px 5px 5px;
     border-bottom: 1px dotted black;
-
     img {
       height: 100%;
       width: 100%;
@@ -158,7 +157,6 @@ button:hover {
   padding: 10px;
 
   @media only screen and (max-width: 500px) {
-
     width: 100%;
     margin: 5px 5px 5px 5px;
     .title-container{
@@ -174,9 +172,4 @@ button:hover {
   width: 100%;
   padding: 10px;
   text-align: left;
-}
-
-.userInfo {
-  font-size: 12px;
-  text-align: center;
 }

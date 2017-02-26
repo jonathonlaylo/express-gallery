@@ -20,27 +20,3 @@
   <form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="POST">
     <button type="submit">Delete Photo</button>
   </form>
-
-{{!--
-{{#if galleryPhoto}}
-<div class="galleryPhoto">
-  <p>
-    <a href="/gallery/{{galleryPhoto.id}}">
-      <img src="{{galleryPhoto.link}}">
-    </a>
-  </p>
-  <p>
-    {{galleryPhoto.author}}
-      <br>
-    {{galleryPhoto.description}}
-  </p>
-
-  <form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
-    <button type="submit">Edit Photo</button>
-  </form>
-
-  <form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="POST">
-    <button type="submit">Delete Photo</button>
-  </form>
-</div>
-{{/if}} --}}
