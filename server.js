@@ -106,21 +106,3 @@ app.listen(3000, function(){
 });
 
 module.exports = app;
-
-// passport.use(new LocalStrategy(
-//   function (username, password, done) {
-//     console.log('username, password: ', username, password);
-//     // check if the user is authenticated or not
-//     if( authenticate(username, password) ) {
-//       // User data from the DB
-//       const user = {
-//         name: 'Joe',
-//         role: 'admin',
-//         favColor: 'green',
-//         isAdmin: true,
-//       };
-//       return done(null, user); // no error, and data = user
-//     }
-//     return done(null, false); // error and authenticted = false
-//   }
-// ));

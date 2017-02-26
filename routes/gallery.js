@@ -8,12 +8,21 @@ const router = express.Router();
 
 router.route('/')
   .get((req, res) => {
-    console.log(req.user.username);
-    models.Gallery.findAll()
+    console.log('username', req.user.username);
 
+    models.Gallery.findAll()
       .then((gallery) => {
         // res.json('sanity check');
-        res.render('gallery/index', {'gallery': gallery});
+        let username;
+        if (req.user) {
+          username = req.user.username;
+        } else {
+          username = null;
+        }
+        res.render('gallery/index', {
+          'gallery': gallery,
+          username: username
+        });
       });
   })
   .post(isAuthenticated, (req, res) => {

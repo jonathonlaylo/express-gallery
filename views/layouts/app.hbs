@@ -11,12 +11,13 @@
       <h1>
         <a href="/gallery/">_ARCHITEKT</a>
       </h1>
-        <aside>
+      <aside>
          Welcome to your online portfolio, we are small groupof passionate designers and archiects, looking tocahnge and create amazing digital images to inspireothers to follow in our innovative steps. FreeArchitect Wordpress Theme
       </aside>
     </div>
     <div class="menu">
       <div class="addMenu">
+
         <form action="/gallery/new" method="get">
           <button type="submit">Add Photo</button>
         </form>
@@ -27,6 +28,13 @@
         </form>
       </div>
     </div>
+
+    {{#if username}}
+      <div class="userInfo">
+        {{username}} is Logged in
+      </div>
+    {{/if}}
+
     <div class="container">
       {{{body}}}
     </div>

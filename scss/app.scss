@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
+  font-size: 13px;
 }
 
 h1 {
@@ -76,11 +77,10 @@ button:hover {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   flex-flow: row wrap;
   width: 100%;
-  text-align: left;
 }
 
 .galleryContainer {
@@ -111,17 +111,17 @@ button:hover {
     border-bottom: 1px dotted black;
 
     img {
-      height: 100%;
       width: 100%;
     }
   }
 }
 
 .galleryPhoto {
+  height: 22%;
+  width: 22%;
   padding: 10px;
 
   @media only screen and (max-width: 500px) {
-
     width: 100%;
     margin: 5px 5px 5px 5px;
     .title-container{
@@ -131,7 +131,23 @@ button:hover {
       width: 100%;
     }
     button {
-      align: left;
+
+    }
+  }
+}
+
+.galleryPhoto:first-child {
+  height: 70%;
+  width: 70%;
+  padding-bottom: 5px;
+
+  @media only screen and (max-width: 500px) {
+    margin: 5px 5px 5px 5px;
+    border-bottom: 1px dotted black;
+
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 }
@@ -158,4 +174,9 @@ button:hover {
   width: 100%;
   padding: 10px;
   text-align: left;
+}
+
+.userInfo {
+  font-size: 12px;
+  text-align: center;
 }
