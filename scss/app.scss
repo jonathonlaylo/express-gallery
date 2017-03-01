@@ -69,14 +69,23 @@ button:hover {
 
   @media only screen and (max-width: 500px) {
     padding-right: 15px;
+    float: right;
   }
 }
 
-.addMenu {
+.addPhoto {
   float: left;
 }
 
-.userMenu {
+.newUser {
+  float: left;
+}
+
+.logoutUser {
+  float: right;
+}
+
+.loginUser {
   float: right;
 }
 

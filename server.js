@@ -86,6 +86,7 @@ passport.deserializeUser(function(user, done) {
   });
 });
 
+
 app.post('/new', (req, res) => {
   bcrypt.genSalt(saltRounds, function(err, salt) {
     bcrypt.hash(req.body.password, salt, function(err, hash) {
@@ -97,6 +98,12 @@ app.post('/new', (req, res) => {
       });
     });
   });
+});
+
+
+app.get('/logout', function(req, res) {
+  req.logout();
+  res.redirect('/gallery');
 });
 
 app.listen(3000, function(){

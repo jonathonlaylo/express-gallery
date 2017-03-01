@@ -22,15 +22,27 @@
         </div>
       {{/if}}
 
-      <div class="addMenu">
+      <div class="addPhoto">
         <form action="/gallery/new" method="get">
           <button type="submit">Add Photo</button>
         </form>
       </div>
 
-      <div class="userMenu">
-        <form action="/login" method="get">
+      <div class="newUser">
+        <form action="" method="get">
           <button type="submit">New User</button>
+        </form>
+      </div>
+
+      <div class="loginUser">
+        <form action="/login" method="get">
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+
+      <div class="logoutUser">
+        <form action="/logout" method="get">
+          <button type="submit">Log Out</button>
         </form>
       </div>
     </div>
