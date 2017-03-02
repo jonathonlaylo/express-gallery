@@ -202,6 +202,6 @@ button:hover {
         width: 100%; } }
 
 .newPhoto {
-  width: 100%;
+  margin: 100px;
   padding: 10px;
-  text-align: left; }
+  text-align: center; }
