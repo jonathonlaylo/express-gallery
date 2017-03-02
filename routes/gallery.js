@@ -54,8 +54,18 @@ router.route('/:id/edit')
 router.route('/:id')
   .get((req, res) =>{
     models.Gallery.findById(req.params.id)
-    .then((gallery) =>{
-      res.render('gallery/photo', {'galleryPhoto': gallery});
+    .then((galleryPhoto) =>{
+        models.Gallery.findAll({
+          where : {
+            id : {
+              $ne : req.params.id
+            }
+          }
+        })
+        .then((galleryPhotos) =>{
+          res.render('gallery/photo', {'galleryPhoto': galleryPhoto, galleryPhotos});
+        });
+      // res.render('gallery/photo', {'galleryPhoto': galleryPhoto});
     });
   })
   .put((req, res) => {

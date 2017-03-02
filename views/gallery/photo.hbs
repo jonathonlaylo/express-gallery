@@ -13,6 +13,12 @@
 </div>
 {{/each}}
 
+{{#each galleryPhotos}}
+    <a href="/gallery/{{galleryPhotos.id}}">
+      <img src="{{link}}">
+    </a>
+{{/each}}
+
   <form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
     <button type="submit">Edit Photo</button>
   </form>

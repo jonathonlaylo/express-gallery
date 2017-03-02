@@ -128,27 +128,10 @@ button:hover {
   }
 }
 
-.galleryPhoto {
-  height: 22%;
-  width: 22%;
-  padding: 10px;
-
-  @media only screen and (max-width: 500px) {
-    width: 100%;
-    margin: 5px 5px 5px 5px;
-    .title-container{
-      border-top: 1px none clear;
-    }
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.galleryPhoto:first-child {
+.galleryPhoto{
   height: 70%;
   width: 70%;
-  padding-bottom: 5px;
+  padding: 10px;
 
   @media only screen and (max-width: 500px) {
     margin: 5px 5px 5px 5px;
@@ -183,3 +166,25 @@ button:hover {
   padding: 10px;
   text-align: center;
 }
+
+.homepage{
+  margin-top: 60px;
+  // height: 10%;
+}
+
+// .galleryPhoto {
+//   height: 22%;
+//   width: 22%;
+//   padding: 10px;
+
+//   @media only screen and (max-width: 500px) {
+//     width: 100%;
+//     margin: 5px 5px 5px 5px;
+//     .title-container{
+//       border-top: 1px none clear;
+//     }
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }

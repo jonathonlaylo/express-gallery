@@ -164,27 +164,14 @@ button:hover {
         width: 100%; } }
 
 .galleryPhoto {
-  height: 22%;
-  width: 22%;
+  height: 70%;
+  width: 70%;
   padding: 10px; }
   @media only screen and (max-width: 500px) {
     .galleryPhoto {
-      width: 100%;
-      margin: 5px 5px 5px 5px; }
-      .galleryPhoto .title-container {
-        border-top: 1px none clear; }
-      .galleryPhoto img {
-        width: 100%; } }
-
-.galleryPhoto:first-child {
-  height: 70%;
-  width: 70%;
-  padding-bottom: 5px; }
-  @media only screen and (max-width: 500px) {
-    .galleryPhoto:first-child {
       margin: 5px 5px 5px 5px;
       border-bottom: 1px dotted black; }
-      .galleryPhoto:first-child img {
+      .galleryPhoto img {
         height: 100%;
         width: 100%; } }
 
@@ -205,3 +192,6 @@ button:hover {
   margin: 100px;
   padding: 10px;
   text-align: center; }
+
+.homepage {
+  margin-top: 60px; }
