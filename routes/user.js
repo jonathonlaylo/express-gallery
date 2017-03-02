@@ -6,7 +6,12 @@ const user = require('../models/User.js');
 const app = express();
 const router = express.Router();
 
-app.post('/user/new', (req, res) =>{
+router.route('/')
+  .get((req, res) =>{
+    res.render('./signup');
+  })
+// .post('/user/new', (req, res) =>{
+.post( (req, res) =>{
 
   bcrypt.genSalt(saltRounds, function(err, salt) {
     bcrypt.hash(req.body.password, salt, function(err, hash) {

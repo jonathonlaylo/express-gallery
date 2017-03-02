@@ -42,6 +42,7 @@ app.use('/gallery', gallery);
 app.use('/user', user);
 app.use('/login', login);
 app.use('/secret', secret);
+// app.use('/new', signup);
 
 passport.use(new LocalStrategy(
   function(username, password, done){
@@ -87,19 +88,18 @@ passport.deserializeUser(function(user, done) {
 });
 
 
-app.post('/new', (req, res) => {
-  bcrypt.genSalt(saltRounds, function(err, salt) {
-    bcrypt.hash(req.body.password, salt, function(err, hash) {
-      User.create({
-        username: req.body.username,
-        password: hash
-      }).then( _ => {
-        res.redirect('/login');
-      });
-    });
-  });
-});
-
+// app.post('/new', (req, res) => {
+//   bcrypt.genSalt(saltRounds, function(err, salt) {
+//     bcrypt.hash(req.body.password, salt, function(err, hash) {
+//       User.create({
+//         username: req.body.username,
+//         password: hash
+//       }).then( _ => {
+//         res.redirect('/login');
+//       });
+//     });
+//   });
+// });
 
 app.get('/logout', function(req, res) {
   req.logout();
