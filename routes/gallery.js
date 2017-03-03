@@ -8,8 +8,6 @@ const router = express.Router();
 
 router.route('/')
   .get((req, res) => {
-    // console.log('username', req.user.username);
-
     models.Gallery.findAll()
       .then((gallery) => {
         let username;
@@ -75,7 +73,6 @@ router.route('/:id')
           'username' : req.user.username
         });
       });
-      // res.render('gallery/photo', {'galleryPhoto': galleryPhoto});
     });
   })
   .put((req, res) => {

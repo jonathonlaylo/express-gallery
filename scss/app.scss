@@ -53,15 +53,11 @@ button:hover {
 }
 
 .title-container {
-  // border-top: 1px dotted black;
-  // padding-top: 10px;
   margin: 30px 10px 30px 10px;
 }
 
 .header-container {
-  // border-top: 1px dotted black;
   padding-top: 30px;
-
 }
 
 .userInfo {
@@ -76,10 +72,6 @@ button:hover {
   float: right;
   border-bottom: 1px dotted black;
   width: 100%;
-
-  // @media only screen and (max-width: 500px) {
-  //   float: right;
-  // }
 }
 
 .addPhoto {
@@ -181,17 +173,6 @@ button:hover {
   width: 98%;
   padding: 10px;
   padding-right: 10px;
-
-  // @media only screen and (max-width: 500px) {
-  //   width: 100%;
-  //   margin: 5px 5px 5px 5px;
-  //   .title-container{
-  //     border-top: 1px none clear;
-  //   }
-  //   img {
-  //     width: 100%;
-  //   }
-  // }
 }
 
 .newPhoto {
@@ -208,10 +189,5 @@ button:hover {
 }
 
 .homepage{
-  // border-style: solid;
-  // border-color: pink;
-  // border-width: 1px;
   margin-top: 60px;
-  // height: 10%;
 }
-

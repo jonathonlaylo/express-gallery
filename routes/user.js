@@ -15,7 +15,6 @@ router.route('/')
   .get((req, res) =>{
     res.render('./signup');
   });
-// .post('/user/new', (req, res) =>{
 router.post('/',(req, res) =>{
 
   bcrypt.genSalt(saltRounds, function(err, salt) {
@@ -25,8 +24,7 @@ router.post('/',(req, res) =>{
         username: req.body.username,
         password: hash
       }).then( _ => {
-          res.redirect('/login');
-          // res.redirect('/gallery');
+        res.redirect('/login');
       });
     });
   });
