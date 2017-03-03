@@ -52,7 +52,7 @@ router.route('/:id/edit')
   });
 
 router.route('/:id')
-  .get((req, res) =>{
+  .get(isAuthenticated, (req, res) =>{
     models.Gallery.findOne({
       where: {
         id: req.params.id
