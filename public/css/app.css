@@ -107,9 +107,10 @@ button:hover {
   margin: 30px 10px 30px 10px; }
 
 .header-container {
-  padding-top: 50px; }
+  padding-top: 30px; }
 
 .userInfo {
+  padding-top: 6px;
   font-size: 20px;
   text-align: center; }
 
@@ -119,10 +120,6 @@ button:hover {
   float: right;
   border-bottom: 1px dotted black;
   width: 100%; }
-  @media only screen and (max-width: 500px) {
-    .menu {
-      padding-right: 15px;
-      float: right; } }
 
 .addPhoto {
   float: left; }

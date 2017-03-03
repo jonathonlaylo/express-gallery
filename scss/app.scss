@@ -60,11 +60,12 @@ button:hover {
 
 .header-container {
   // border-top: 1px dotted black;
-  padding-top: 50px;
+  padding-top: 30px;
 
 }
 
 .userInfo {
+  padding-top: 6px;
   font-size: 20px;
   text-align: center;
 }
@@ -75,12 +76,10 @@ button:hover {
   float: right;
   border-bottom: 1px dotted black;
   width: 100%;
-  // flex-flow: column;
-  // display: flex;
-  @media only screen and (max-width: 500px) {
-    padding-right: 15px;
-    float: right;
-  }
+
+  // @media only screen and (max-width: 500px) {
+  //   float: right;
+  // }
 }
 
 .addPhoto {
@@ -141,9 +140,7 @@ button:hover {
 .detailsView {
   display: flex;
   justify-content: space-between;
-  // margin: auto;
   flex-flow: row;
-  // width: 100%;
 }
 
 .galleryPhoto{
@@ -163,9 +160,6 @@ button:hover {
 
 .galleryPhotos{
   padding: 10px;
-
-  // width: 40%;
-  // height: 40%;
 }
 
 .detailsRight {
