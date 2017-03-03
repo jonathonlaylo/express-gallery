@@ -104,17 +104,21 @@ button:hover {
   border: 1px; }
 
 .title-container {
-  border-top: 1px dotted black;
-  padding-top: 10px;
   margin: 30px 10px 30px 10px; }
+
+.header-container {
+  padding-top: 50px; }
 
 .userInfo {
   font-size: 20px;
   text-align: center; }
 
 .menu {
-  padding: 10px;
-  float: right; }
+  margin-top: -25px;
+  padding-bottom: 10px;
+  float: right;
+  border-bottom: 1px dotted black;
+  width: 100%; }
   @media only screen and (max-width: 500px) {
     .menu {
       padding-right: 15px;
@@ -201,6 +205,11 @@ button:hover {
   padding-right: 10px; }
 
 .newPhoto {
+  margin: 100px;
+  padding: 10px;
+  text-align: center; }
+
+.login {
   margin: 100px;
   padding: 10px;
   text-align: center; }
