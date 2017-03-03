@@ -35,8 +35,8 @@ router.route('/')
     });
   });
 
-router.route('/new', isAuthenticated)
-  .get((req, res) =>{
+router.route('/new')
+  .get(isAuthenticated, (req, res) =>{
     models.Gallery.findAll()
       .then((gallery) => {
         res.render('gallery/new');
@@ -53,18 +53,25 @@ router.route('/:id/edit')
 
 router.route('/:id')
   .get((req, res) =>{
-    models.Gallery.findById(req.params.id)
+    models.Gallery.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
     .then((galleryPhoto) =>{
-        models.Gallery.findAll({
-          where : {
-            id : {
-              $ne : req.params.id
-            }
+      models.Gallery.findAll({
+        where : {
+          id : {
+            $ne : req.params.id
           }
-        })
-        .then((galleryPhotos) =>{
-          res.render('gallery/photo', {'galleryPhoto': galleryPhoto, galleryPhotos});
+        }
+      })
+      .then((galleryPhotos) =>{
+        res.render('gallery/photo', {
+          'galleryPhoto': galleryPhoto,
+          'galleryPhotos': galleryPhotos
         });
+      });
       // res.render('gallery/photo', {'galleryPhoto': galleryPhoto});
     });
   })

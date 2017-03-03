@@ -164,8 +164,8 @@ button:hover {
         width: 100%; } }
 
 .galleryPhoto {
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
   padding: 10px; }
   @media only screen and (max-width: 500px) {
     .galleryPhoto {
@@ -175,18 +175,13 @@ button:hover {
         height: 100%;
         width: 100%; } }
 
+.galleryPhotos {
+  width: 20%;
+  height: 20%; }
+
 .galleryEdit {
   height: 100%;
-  width: 100%;
   padding: 10px; }
-  @media only screen and (max-width: 500px) {
-    .galleryEdit {
-      width: 100%;
-      margin: 5px 5px 5px 5px; }
-      .galleryEdit .title-container {
-        border-top: 1px none clear; }
-      .galleryEdit img {
-        width: 100%; } }
 
 .newPhoto {
   margin: 100px;

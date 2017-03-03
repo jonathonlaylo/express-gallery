@@ -1,31 +1,34 @@
-{{#each galleryPhoto}}
-<div class="galleryPhoto">
-  <p>
-    <a href="/gallery/{{galleryPhoto.id}}">
-      <img src="{{link}}">
-    </a>
-  </p>
-  <p>
-    {{author}}
-      <br>
-    {{description}}
-  </p>
+<div class="detailsView">
+  {{#if galleryPhoto}}
+  <div class="galleryPhoto">
+    <p>
+      <a href="/gallery/{{galleryPhoto.id}}">
+        <img src="{{galleryPhoto.link}}">
+      </a>
+    </p>
+    <p>
+      {{author}}
+        <br>
+      {{description}}
+    </p>
+  </div>
+  {{/if}}
+
+  {{#each galleryPhotos}}
+    <div class="galleryPhotos">
+      <a href="/gallery/{{galleryPhotos.id}}">
+        <img src="{{link}}">
+      </a>
+    </div>
+  {{/each}}
 </div>
-{{/each}}
 
-{{#each galleryPhotos}}
-    <a href="/gallery/{{galleryPhotos.id}}">
-      <img src="{{link}}">
-    </a>
-{{/each}}
-
-  <form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
-    <button type="submit">Edit Photo</button>
-  </form>
-
-  <form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="POST">
-    <button type="submit">Delete Photo</button>
-  </form>
+<form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
+  <button type="submit">Edit Photo</button>
+</form>
+<form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="OST">
+  <button type="submit">Delete Photo</button>
+</form>
 
 {{!--
 {{#if galleryPhoto}}

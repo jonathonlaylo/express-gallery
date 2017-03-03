@@ -129,8 +129,8 @@ button:hover {
 }
 
 .galleryPhoto{
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
   padding: 10px;
 
   @media only screen and (max-width: 500px) {
@@ -143,21 +143,26 @@ button:hover {
   }
 }
 
+.galleryPhotos{
+  width: 20%;
+  height: 20%;
+}
+
 .galleryEdit {
   height: 100%;
-  width: 100%;
+  // width: 100%;
   padding: 10px;
 
-  @media only screen and (max-width: 500px) {
-    width: 100%;
-    margin: 5px 5px 5px 5px;
-    .title-container{
-      border-top: 1px none clear;
-    }
-    img {
-      width: 100%;
-    }
-  }
+  // @media only screen and (max-width: 500px) {
+  //   width: 100%;
+  //   margin: 5px 5px 5px 5px;
+  //   .title-container{
+  //     border-top: 1px none clear;
+  //   }
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 }
 
 .newPhoto {
@@ -168,6 +173,9 @@ button:hover {
 }
 
 .homepage{
+  // border-style: solid;
+  // border-color: pink;
+  // border-width: 1px;
   margin-top: 60px;
   // height: 10%;
 }
