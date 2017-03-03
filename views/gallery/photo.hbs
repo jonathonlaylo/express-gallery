@@ -7,28 +7,31 @@
       </a>
     </p>
     <p>
-      {{author}}
+      {{galleryPhoto.author}}
         <br>
-      {{description}}
+      {{galleryPhoto.description}}
     </p>
+    <br>
+    <form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
+      <button type="submit">Edit Photo</button>
+    </form>
+    <form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="OST">
+      <button type="submit">Delete Photo</button>
+    </form>
   </div>
   {{/if}}
 
+  <div class="detailsRight">
   {{#each galleryPhotos}}
     <div class="galleryPhotos">
-      <a href="/gallery/{{galleryPhotos.id}}">
+      <a href="/gallery/{{id}}">
         <img src="{{link}}">
       </a>
     </div>
   {{/each}}
+  </div>
 </div>
 
-<form action="/gallery/{{galleryPhoto.id}}/edit" method="get">
-  <button type="submit">Edit Photo</button>
-</form>
-<form action="/gallery/{{galleryPhoto.id}}?_method=DELETE" method="OST">
-  <button type="submit">Delete Photo</button>
-</form>
 
 {{!--
 {{#if galleryPhoto}}

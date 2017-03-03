@@ -163,9 +163,14 @@ button:hover {
       .galleryContainer:first-child img {
         width: 100%; } }
 
+.detailsView {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row; }
+
 .galleryPhoto {
-  height: 60%;
-  width: 60%;
+  height: 600%;
+  width: 600%;
   padding: 10px; }
   @media only screen and (max-width: 500px) {
     .galleryPhoto {
@@ -176,12 +181,24 @@ button:hover {
         width: 100%; } }
 
 .galleryPhotos {
-  width: 20%;
-  height: 20%; }
+  padding: 10px; }
+
+.detailsRight {
+  display: flex;
+  flex-flow: column; }
+  @media only screen and (max-width: 500px) {
+    .detailsRight {
+      display: none;
+      flex-flow: none;
+      margin: 5px 5px 5px 5px; }
+      .detailsRight img {
+        height: 100%;
+        width: 100%; } }
 
 .galleryEdit {
-  height: 100%;
-  padding: 10px; }
+  width: 98%;
+  padding: 10px;
+  padding-right: 10px; }
 
 .newPhoto {
   margin: 100px;
